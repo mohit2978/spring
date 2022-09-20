@@ -8,5 +8,6 @@ public class Main {
         var context=new AnnotationConfigApplicationContext(config.class);
         var v1=context.getBean(Animal.class);
         System.out.println(v1);
+        context.close();
     }
 }
